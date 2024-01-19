@@ -8,11 +8,14 @@
 }
 .question_style
 {
-    text-decoration: none;
     color:#5B5858 ;
 }
 .bell_style
 {
-    text-decoration: none;
     color:#FF8F00 ;
+}
+.piccola_img
+{
+    max-width: 48px;
+    /* soluzione temporanea grandezza img piccola da rivedere  */
 }
