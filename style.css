@@ -19,3 +19,6 @@
     max-width: 48px;
     /* soluzione temporanea grandezza img piccola da rivedere  */
 }
+#row_aside_main .my_width{
+    width: 186px;
+}
