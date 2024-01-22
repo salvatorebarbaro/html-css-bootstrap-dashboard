@@ -1,3 +1,4 @@
+/* stile colore per navbar */
 .my_grey
 {
     background-color: #E5E5E5;
@@ -19,6 +20,41 @@
     max-width: 48px;
     /* soluzione temporanea grandezza img piccola da rivedere  */
 }
+/* stile colore per navbar fine  */
+/* inizio aside  */
 #row_aside_main .my_width{
-    width: 186px;
+    width: 190px;
 }
+#row_aside_main
+{
+    background-color: #051E34;
+}
+/* fine aside  */
+/* inizio main  */
+#main
+{
+    overflow-y: auto;
+}
+#head_main
+{
+    background-color:#1B72E8 ;
+}
+
+/* fine main  */
+/* inizio stilizzazione per dispositivi  */
+/* dispositivi medi */
+@media screen and (max-device-width:991px) 
+{
+    #row_aside_main .my_width
+    {
+        width: 68px;
+    }
+    
+}
+/* dispositivi medi fine */
+/* dispositivi piccoli */
+@media screen and (max-device-width:576px) {
+    
+}
+/* dispositivi piccoli fine */
+/* fine stilizzazione per dispositivi  */
