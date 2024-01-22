@@ -29,6 +29,10 @@
 {
     background-color: #051E34;
 }
+#caselle
+{
+    color: white;
+}
 /* fine aside  */
 /* inizio main  */
 #main
@@ -39,7 +43,6 @@
 {
     background-color:#1B72E8 ;
 }
-
 /* fine main  */
 /* inizio stilizzazione per dispositivi  */
 /* dispositivi medi */
@@ -49,7 +52,10 @@
     {
         width: 68px;
     }
-    
+    #scomparsa
+    {
+        display: none;
+    }
 }
 /* dispositivi medi fine */
 /* dispositivi piccoli */
