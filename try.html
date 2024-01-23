@@ -13,117 +13,248 @@
 </head>
 <body>
     
-        <div class="row ">
-            <div id="navbar">
-                <nav class="navbar navbar-expand-lg bg-body-tertiary py-3 ">
-                    <div class="container-fluid flex-nowrap bg-white ">
-                    <!-- contenitore delle immagini  -->
-                    <div class="col  px-3   ">
-                    <!-- contenitore delle immagini  -->
-                        <div class="row">
-                            <div id="logo_grandi schermi" class="col d-sm-none d-lg-block  ">
-                                <img src="../img di dashboard/img/logo.svg" alt="logo boolean esteso">
-                            </div>
-        
-                            <div id="logo_piccoli_schermi" class="col-1  d-sm-block d-lg-none ">
-                                <img class=" piccola_img " src="../img di dashboard/img/mobile-logo.png" alt="logo boolean ridotto">
-                            </div>
-                            <!-- rivedere perchè immagine piccola esplode e occupa tutto  -->
-                        </div>
-                        <!-- contenitore delle immagini fine -->
+    <div id="body_main" class="row">
+        <!-- praticamente con queste classi noi vogliamo che le nostre col occupino la metà fino a schermi md poi quando arriviamo a schermi sm loro andaranno a occupare tutta la vp  -->
+        <div class="col-md-12 col-lg-6 flex-md-row flex-lg-column py-2 px-1 ">
+            <div  class="container border border-secondary mb-4 rounded ">
+                <div class="row grigiochiaro border-bottom border-secondary py-3 ps-2">
+                    <h2 class=" ">Prossime Classi</h2>
+                </div>
+                <div id="lista_classi" class="container pb-2 ">
+                    <div class="row flex-nowrap align-items-center border-bottom border-secondary-subtle mb-1 mt-1 ">
+                    <div class="col-4 ">
+                            <span class="font-weight-900">Nome</span>
                     </div>
-                        <div class="w-100 " id="navbarSupportedContent">
-                            <form class="d-flex align-items-center " role="search">
-                                <!-- barra di ricerca  -->
-                                <input class="form-control me-2 my_grey" type="search" placeholder="Prova a cercare: Lezioni di Lavarel" aria-label="Search">
-                                <!-- barra di ricerca fine -->
-                                <!-- container dei bottoni  -->
-                                <div class="row flex-nowrap align-items-center   ">
-                                    <div class="col d-flex gap-2   d-sm-none d-lg-flex align-items-center pe-0  ">
-                                        <button type="button" class="btn btn-link p-0 ">
-                                            <i class="fa-solid fa-list-ul text-decoration-none question_style"></i>
-                                        </button>
-                                        <button type="button" class="btn btn-link p-0 ">
-                                            <i class="fa-solid fa-circle-question question_style text-decoration-none"></i>
-                                        </button>
-                                        <button type="button" class="btn btn-link p-0 ">
-                                            <i class="fa-solid fa-ellipsis-vertical question_style text-decoration-none"></i>
-                                        </button>    
-                                    </div>
-                                    <div class="col">
-                                        <button type="button" class="btn btn-link p-0 ">
-                                            <i class="fa-solid fa-bell bell_style text-decoration-none"></i>
-                                        </button>
-                                    </div>
-                                   
-                                </div>
-                                <!-- container dei bottoni fine -->
-                            </form>
-                            
-                        </div>
+                    <div class="col  ">
+                        <span class="">Data</span>
                     </div>
-                  </nav>
-        
-            </div>
-        </div>
-        <div id="row_aside_main" class="row vh-100 ">
-            <div id="aside" class="d-flex flex-column justify-content-between align-items-center  py-4 px-2   my_width vh-100  ">
-                <div class="row align-items-center">
-                    <div id="caselle" class="col-12 py-1  text-center fs-5   ">
-                        <i class="fa-solid fa-house"></i>
-                        <span id="scomparsa">House</span>
+                    <div class="col ">ROI</div>
+                    <div class="col"><span class="">Stato</span></div>
+                    <div class="col ">
+                        <span class="">Azioni</span>
                     </div>
-                    <div id="caselle" class="col-12 py-1 text-center fs-5   ">
-                        <i class="fa-solid fa-chart-simple"></i>
-                        <span id="scomparsa">Stats</span>
-                    </div>
-                    <div id="caselle" class="col-12 py-1 text-center fs-5   ">
-                        <i class="fa-solid fa-signal"></i>
-                        <span id="scomparsa">Signals</span>
                     </div>
                 </div>
-                <div class="row">ciao</div>
+                <div id="lista_classi" class="container pb-2 ">
+                    <div class="row flex-nowrap align-items-center border-bottom border-secondary-subtle mb-1 mt-1 ">
+                    <div class="col-4 d-flex gap-2 ">
+                            <img src="../img di dashboard/img/class-avatar.jpg" class="img-fluid " alt="">
+                            <span>classe 75</span>
+                    </div>
+                    <div class="col d-flex  ">
+                        <span>15 Feb 2021</span>
+                    </div>
+                    <div class="col ">20%</div>
+                    <div class="col"><span class="">Done</span></div>
+                    <div class="col d-flex gap-1  ">
+                        <button type="button" id="azioni" class="btn btn-light border-secondary text-secondary">
+                            <i class="fa-solid fa-pencil"></i>
+                        </button>
+                        <button type="button" id="azioni" class="btn btn-light border-secondary text-secondary">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                <div id="lista_classi" class="container pb-2 ">
+                    <div class="row flex-nowrap align-items-center border-bottom border-secondary-subtle pb-1  ">
+                    <div class="col-4 d-flex ">
+                            <img src="../img di dashboard/img/class-avatar.jpg" class="img-fluid " alt="">
+                            <span>classe 75</span>
+                    </div>
+                    <div class="col d-flex  ">
+                        <span>15 Feb 2021</span>
+                    </div>
+                    <div class="col ">20%</div>
+                    <div class="col"><span class="">Done</span></div>
+                    <div class="col d-flex gap-1  ">
+                        <button type="button" class="btn btn-light border-secondary text-secondary">
+                            <i class="fa-solid fa-pencil"></i>
+                        </button>
+                        <button type="button" class="btn btn-light border-secondary text-secondary">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                <div id="lista_classi" class="container pb-2 ">
+                    <div class="row flex-nowrap align-items-center border-bottom border-secondary-subtle pb-1  ">
+                    <div class="col-4 d-flex ">
+                            <img src="../img di dashboard/img/class-avatar.jpg" class="img-fluid " alt="">
+                            <span>classe 75</span>
+                    </div>
+                    <div class="col d-flex  ">
+                        <span>15 Feb 2021</span>
+                    </div>
+                    <div class="col ">20%</div>
+                    <div class="col"><span class="">Done</span></div>
+                    <div class="col d-flex gap-1  ">
+                        <button type="button" class="btn btn-light border-secondary text-secondary">
+                            <i class="fa-solid fa-pencil"></i>
+                        </button>
+                        <button type="button" class="btn btn-light border-secondary text-secondary">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                <div id="lista_classi" class="container pb-2 ">
+                    <div class="row flex-nowrap align-items-center border-bottom border-secondary-subtle pb-1  ">
+                    <div class="col-4 d-flex ">
+                            <img src="../img di dashboard/img/class-avatar.jpg" class="img-fluid " alt="">
+                            <span>classe 75</span>
+                    </div>
+                    <div class="col d-flex  ">
+                        <span>15 Feb 2021</span>
+                    </div>
+                    <div class="col ">20%</div>
+                    <div class="col"><span class="">Done</span></div>
+                    <div class="col d-flex gap-1  ">
+                        <button type="button" class="btn btn-light border-secondary text-secondary">
+                            <i class="fa-solid fa-pencil"></i>
+                        </button>
+                        <button type="button" class="btn btn-light border-secondary text-secondary">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                <div id="lista_classi" class="container pb-2 ">
+                    <div class="row flex-nowrap align-items-center border-bottom border-secondary-subtle pb-1  ">
+                    <div class="col-4 d-flex ">
+                            <img src="../img di dashboard/img/class-avatar.jpg" class="img-fluid " alt="">
+                            <span>classe 75</span>
+                    </div>
+                    <div class="col d-flex  ">
+                        <span>15 Feb 2021</span>
+                    </div>
+                    <div class="col ">20%</div>
+                    <div class="col"><span class="">Done</span></div>
+                    <div class="col d-flex gap-1  ">
+                        <button type="button" class="btn btn-light border-secondary text-secondary">
+                            <i class="fa-solid fa-pencil"></i>
+                        </button>
+                        <button type="button" class="btn btn-light border-secondary text-secondary">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                <div id="lista_classi" class="container pb-2 ">
+                    <div class="row flex-nowrap align-items-center border-bottom border-secondary-subtle pb-1  ">
+                    <div class="col-4 d-flex ">
+                            <img src="../img di dashboard/img/class-avatar.jpg" class="img-fluid " alt="">
+                            <span>classe 75</span>
+                    </div>
+                    <div class="col d-flex  ">
+                        <span>15 Feb 2021</span>
+                    </div>
+                    <div class="col ">20%</div>
+                    <div class="col"><span class="">Done</span></div>
+                    <div class="col d-flex gap-1  ">
+                        <button type="button" class="btn btn-light border-secondary text-secondary">
+                            <i class="fa-solid fa-pencil"></i>
+                        </button>
+                        <button type="button" class="btn btn-light border-secondary text-secondary">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                <div id="lista_classi" class="container pb-2 ">
+                    <div class="row flex-nowrap align-items-center border-bottom border-secondary-subtle pb-1  ">
+                    <div class="col-4 d-flex ">
+                            <img src="../img di dashboard/img/class-avatar.jpg" class="img-fluid " alt="">
+                            <span>classe 75</span>
+                    </div>
+                    <div class="col d-flex  ">
+                        <span>15 Feb 2021</span>
+                    </div>
+                    <div class="col ">20%</div>
+                    <div class="col"><span class="">Done</span></div>
+                    <div class="col d-flex gap-1  ">
+                        <button type="button" class="btn btn-light border-secondary text-secondary">
+                            <i class="fa-solid fa-pencil"></i>
+                        </button>
+                        <button type="button" class="btn btn-light border-secondary text-secondary">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                <div id="lista_classi" class="container pb-2 ">
+                    <div class="row flex-nowrap align-items-center border-bottom border-secondary-subtle pb-1  ">
+                    <div class="col-4 d-flex ">
+                            <img src="../img di dashboard/img/class-avatar.jpg" class="img-fluid " alt="">
+                            <span>classe 75</span>
+                    </div>
+                    <div class="col d-flex  ">
+                        <span>15 Feb 2021</span>
+                    </div>
+                    <div class="col ">20%</div>
+                    <div class="col"><span class="">Done</span></div>
+                    <div class="col d-flex gap-1  ">
+                        <button type="button" class="btn btn-light border-secondary text-secondary">
+                            <i class="fa-solid fa-pencil"></i>
+                        </button>
+                        <button type="button" class="btn btn-light border-secondary text-secondary">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                
             </div>
-            <div id="main" class="col d-flex flex-column  bg-danger ">
-                <div id="head_main" class="row py-4  ps-2   ">
-                    
-                    <div class="col">
-                        <div id="head_section_blue1" class="row">
-                            <div class="col d-flex  align-content-center gap-3  ">
-                                <h2 id="boolean" class="">Boolean</h2>
-                                <button id="#row_aside_main" type="button" class="btn">Piano Blaze</button>
-                            </div>                
+            <div  class="container border border-secondary mb-4 rounded ">
+                    <div class="row grigiochiaro border-bottom border-secondary py-3 ps-2 mb-4  ">
+                        <h2 class=" ">Prossime Classi</h2>
+                    </div>
+                    <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Come aggiungere un nuovo studente ?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Puoi premere sull bottone "+".
                         </div>
-                        <div class="row">
-                            <div class="col d-flex ">
-                                <button id="#row_aside_main" type="button" class="btn">3 app</button>
-                                <button id="#row_aside_main" type="button" class="btn">Boolan mobile app</button>
-                                <button id="#row_aside_main" type="button" class="btn">Boolan web app</button>
-                                <button id="#row_aside_main" type="button" class="btn">Boolan blog app</button>
-                            </div>
-                            
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Come posso accedere alle informazioni del mio account?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Clicca sull'icona campanella
                         </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Posso usare questa dashboard da mobile?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
                         
-                    </div>
-                    <div class="col">
-                        <div class="row">
-                            <div class="row">Studenti online negli ultimi 30 minuti</div>
-                            <div class="row">125</div>
                         </div>
                     </div>
-                    <div class="col d-flex ">
-                        <p>Nuovo studente</p>
-                        <button type="button" class="btn btn-primary">Primary</button>
-
                     </div>
                 </div>
-                <div id="body_main" class="row">ciao</div>
-            </div>
+                    
+                </div>
+            
+        
+        <div class="col-sm-12 col-md-6 flex-sm-row flex-md-column">
+          
         </div>
-
-
-
-
+      </div>
 
     <!-- link bootstrap body -->
     </body>

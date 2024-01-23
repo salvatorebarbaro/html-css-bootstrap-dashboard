@@ -1,3 +1,4 @@
+
 /* stile colore per navbar */
 .my_grey
 {
@@ -20,12 +21,16 @@
     max-width: 48px;
     /* soluzione temporanea grandezza img piccola da rivedere  */
 }
+#azioni
+{
+    padding: 8px 12px 8px 12px;
+}
 /* stile colore per navbar fine  */
 /* inizio aside  */
-#row_aside_main .my_width{
+#row_main .my_width{
     width: 190px;
 }
-#row_aside_main
+#row_main
 {
     background-color: #051E34;
 }
@@ -43,12 +48,32 @@
 {
     background-color:#1B72E8 ;
 }
+.icone
+{
+    background-color: #165BBA;
+    border-radius: 30px;
+    padding: 8px 10px ;
+    font-size: 12px;
+}
+
+.scomparsa
+{
+    display: none;
+}
+#lista_classi img
+{
+    height: 30px;
+}
+.grigiochiaro
+{
+    background-color:#F7F7F7 ;
+}
 /* fine main  */
 /* inizio stilizzazione per dispositivi  */
 /* dispositivi medi */
 @media screen and (max-device-width:991px) 
 {
-    #row_aside_main .my_width
+    #row_main .my_width
     {
         width: 68px;
     }
